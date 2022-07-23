@@ -38,15 +38,21 @@ main{
     justify-content:flex-end;
 }
 p{
+   
     color: var(--color--btn);
     font-family: 'Arimo', sans-serif;
     font-size: 40px;
+    overflow-x: scroll;
+    
+}
+p::-webkit-scrollbar{
+    display: none;
 }
 .buttons{
     margin-top: 50px;
     width: 100%;
     height: auto;
-    margin-left: 5px;
+    margin-left: 2px;
    
 }
 
@@ -54,13 +60,18 @@ p{
     width: 65px;
     height: 65px;
     border: none;
+    font-size: 15px;
     border-radius: 100%;
     margin: 2px;
     background-color: var(--color--bacgronud);
     box-shadow: 2px 2px 2px  #242a33;
 
 }
+.btn--operator{
+    color: var(--color--btn);
+}
 .btn:hover{
+    cursor: pointer;
     background-color: #282d35;
     color: var(--color--btn);
     
@@ -79,6 +90,7 @@ p{
     box-shadow: 2px 2px 2px  #242a33;
 }
 .equals:hover{
+    cursor: pointer;
     background-color:#ee9324;
     box-shadow: 3px 4px #242931  ;
 }
