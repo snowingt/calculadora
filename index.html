@@ -4,40 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,500&family=Quicksand:wght@300;400;700&family=Roboto:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>calculadora</title>
+    <title>calculatorV1</title>
 </head>
-<body >
+<body>
     <div class="container">
         <main>
-            <header>
-                <p id="resultado">0</p>
-            </header>
-            <section id="buttons">
+          <div class="result"><p id="display">0</p> </div>
+
+
+
+               <div class="buttons">
+                <div class="btn--flex">
+                <button class="btn  btn--add ">7</button>
+                <button class="btn  btn--add ">8</button>
+                <button class="btn  btn--add">9</button>
+                <button class="btn">-</button>
+            </div>
+            <div class="btn--flex">
+                <button class="btn  btn--add">4</button>
+                <button class="btn  btn--add">5</button>
+                <button class="btn  btn--add">6</button>
+                <button class="btn  btn--add">+</button>
+            </div>
+<div class="btn--flex">
+ 
+                <button class="btn  btn--add">1</button>
+                <button class="btn  btn--add">2</button>
+                <button class="btn  btn--add">3</button>
+                <button class="equals  btn--add">=</button>
+            </div>
+            <div class="btn--flex">
+                <button class="btn  btn--add">0</button>
+                <button class="btn  btn--add">.</button>
+                <button class="btn  btn--add">c</button>
                 
-               <button class="button  nunb  btn--color" type="button">c</button>
-               <button class="button  nunb  btn--color" type="button">
-                +/-
-               </button>
-               <button class="button  nunb  btn--color" type="button">%</button>
-               <button class="button  nunb  btn--color" type="button">/</button>
-               <button class="button  nunb" type="button">7</button>
-               <button class="button  nunb" type="button">8</button>
-               <button class="button  nunb" type="button">9</button>
-               <button class="button  nunb  btn--color" type="button">X</button>
-               <button class="button  nunb" type="button">4</button>
-               <button class="button  nunb" type="button">5</button>
-               <button class="button  nunb" type="button">6</button>
-               <button class="button  nunb  btn--color" type="button">-</button>
-               <button class="button  nunb" type="button">1</button>
-               <button class="button  nunb" type="button">2</button>
-               <button class="button  nunb  " type="button">3</button>
-               <button class="button  nunb  btn--color" type="button">+</button>
-               <button class="button  nunb" type="button">0</button>
-               <button class="button  nunb" type="button">.</button>
-               <button class="button  nunb  btn--color  button--result" type="button">=</button>
-               
-            </section>
+            </div>
+            
+        
+            </div>
+                
+           
         </main>
     </div>
     <script src="./index.js"></script>

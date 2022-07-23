@@ -1,50 +1,65 @@
-window.addEventListener('load', ()=>{/*escuchamos cuando cargue el js*/
 
-/*creamos dos constante una para buscar el display y otro los botoness*/
-    const p = document.querySelector("#resultado")
-    const button=document.getElementsByClassName("button")
 
-    /*creamos otra constante para convertir el htmlcollection a un array*/
-    const keypadButtonsArray = Array.from(button)
+window.addEventListener('load',()=>{ //we listen to load the js
 
-    /*iteramos el array de botones*/
-    keypadButtonsArray.forEach(buttons => {
 
-        /*a cada boton le agregamos un listener*/
-       buttons.addEventListener('click', ()=>{
-        calculadora(buttons,p)
-       })
+    //We create two constants, one for the display and one for the buttons.
+    const p = document.getElementById('display');
+    const button= document.getElementsByClassName('btn--add');
+
+
+    //
+    const keypasButtons= Array.from(button);
+
+
+    //we iterate the array
+    keypasButtons.forEach(buttons=>{
+
+        //add a listener to the buttons
+        buttons.addEventListener('click',()=>{
+            calculator(buttons,p)
+            
+           
         
-    });
+
+        })
+    })
+
+
+
+
+    
 
 
 })
 
-/*aqui las funciones*/
 
-function calculadora(buttons,p){
+function calculator(buttons,p){
 
     switch(buttons.innerHTML){
         case"c":
-        borrar(p);
+        clear(p);
         break;
         case"=":
-        calcular(p)
+        result(p)
         break;
         default:
-            actualizar(p,buttons)
+            update(p,buttons)
             break;
     }
 }
-function calcular(p){
+function result(p){
   p.innerHTML=  eval(p.innerHTML)
+  
+     
+
 }
-function actualizar(p,buttons){
+function update(p,buttons){
     if(p.innerHTML==0){
         p.innerHTML='';
     }
     p.innerHTML+=buttons.innerHTML
 }
-function borrar(p){
+function clear(p){
     p.innerHTML=0;
 }
