@@ -22,17 +22,17 @@
     background-color: #333c49;
 }
 main{
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 650px;
     background: var(--color--bacgronud);
     border-radius: 15px;
     
     
 }
 .result{
-    width: 250px;
+    width: 300px;
     height: 150px;
-   
+   padding-left: 60px;
     display: flex;
     align-items: flex-end;
     justify-content:flex-end;
@@ -49,7 +49,7 @@ p::-webkit-scrollbar{
     display: none;
 }
 .buttons{
-    margin-top: 50px;
+    margin-top: 95px;
     width: 100%;
     height: auto;
     margin-left: 2px;
@@ -57,8 +57,8 @@ p::-webkit-scrollbar{
 }
 
 .btn{
-    width: 65px;
-    height: 65px;
+    width: 90px;
+    height: 90px;
     border: none;
     font-size: 15px;
     border-radius: 100%;
@@ -69,6 +69,7 @@ p::-webkit-scrollbar{
 }
 .btn--operator{
     color: var(--color--btn);
+    font-size: large;
 }
 .btn:hover{
     cursor: pointer;
@@ -77,19 +78,26 @@ p::-webkit-scrollbar{
     
 
 }
+.btn--x{
+    
+    font-size: 20px;
+
+}
 .equals{
-    width:62px ;
-    height: 135px;
+    
     border-radius: 50px;
     border: none;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    margin-top: 3px;
+    margin-left: 8px;
+    margin-top: 4px;
+    
+   
+    
     position: absolute;
     background-color: var(--color--btn);
     box-shadow: 2px 2px 2px  #242a33;
 }
 .equals:hover{
+    color: #e3e7e9;
     cursor: pointer;
     background-color:#ee9324;
     box-shadow: 3px 4px #242931  ;
